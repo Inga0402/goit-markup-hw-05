@@ -101,11 +101,17 @@ html {
         padding-top: 32px;
         padding-bottom: 32px;
     }
-
-     .menu-nav-list-item-link::after{
-        display: block;
+    .menu-nav-list-item-link {
+        color: var(--primary-title-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+       position: relative;
+    }
+     .menu-nav-list-item-link.current::after{
         content: "";
-        width: 47px;
+        display: block;
+        width: 100%;
         height: 4px;
         background:var(--accent-color);
         border-radius: 2px;
@@ -138,13 +144,7 @@ html {
         color: var(--accent-color);
     }
 
-    .menu-nav-list .menu-nav-list-item-link {
-        color: var(--primary-title-color);
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.2;
-       
-    }
+    
 
     .menu-nav-list .menu-nav-list-item-link:hover {
         color: var(--accent-color);
@@ -156,16 +156,7 @@ html {
     .auth-nav-icon:hover, .auth-nav-icon:focus{
         color: var(--accent-color);
     } 
-     /* .auth-nav-link:hover .auth-nav-icon, {
-        color: var(--accent-color)}
-
-       .auth-nav-link:focus .auth-nav-icon {
-           color: var(--accent-color)}  */
-
-    /* .auth-nav-list-item:hover{
-        color: var(--accent-color);
-    }
-     */
+     
     .auth-nav-link{
         padding-top: 32px;
         padding-bottom: 32px;
@@ -245,6 +236,8 @@ html {
         padding: 10px 32px;
     }
     
+
+
         
     /* Section */
     .section-title{
@@ -707,27 +700,6 @@ html {
 
 
     /* Portfolio */
-    .modal-btn:hover, .modal-btn:focus{
-        color: var(--primary-white-color);
-        background-color: var(--accent-color);
-    }
-
-    .filter-list{
-        display:flex;
-        justify-content: center;
-        margin-top: 93px;
-       
-    }
-
-    .modal-btn:hover,
-    .modal-btn:focus{
-        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        0px 1px 1px rgba(0, 0, 0, 0.12);
-    }
-    .filter-list-item:not(:last-child) {
-        margin-right: 8px;
-    }
-
     .modal-btn{
         padding: 6px 22px;
         border-radius: 4px;
@@ -739,7 +711,36 @@ html {
         line-height: 1.6;
         background-color: #F5F4FA;;
         margin-bottom: 50px;
+
+        transition-property: background-color;
+        transition-delay:250ms ;
+        transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .modal-btn:hover, .modal-btn:focus{
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+
+    .filter-list{
+        display:flex;
+        justify-content: center;
+        margin-top: 93px;
+       
+    }
+
+    /* .modal-btn:hover,
+    .modal-btn:focus{
+        
+    } */
+
+    .filter-list-item:not(:last-child) {
+        margin-right: 8px;
+    }
+
+   
 
     .container{
         width: 1200px;
