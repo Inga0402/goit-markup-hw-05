@@ -161,9 +161,11 @@ html {
 
     .auth-nav-link:hover, .auth-nav-link:focus {
         color: var(--accent-color);
+        fill: var(--accent-color);
     }
     .auth-nav-icon:hover, .auth-nav-icon:focus{
         color: var(--accent-color);
+        fill: var(--accent-color);
     } 
      
     .auth-nav-link{
@@ -253,9 +255,9 @@ html {
         border-radius: 4px;
         text-align: center;
         padding: 10px 32px;
+
     }
     
-
 
         
     /* Section */
