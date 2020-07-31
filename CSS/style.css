@@ -236,7 +236,7 @@ html {
        
     }
 
-    .button{ 
+    /* .button{ 
         color: var(--primary-title-color);
         font-weight: 500;
         font-size: 16px;
@@ -245,26 +245,42 @@ html {
         text-align: center;
         letter-spacing: 0.06em;
         padding-bottom: 200px;
-    }
+
+       
+    } */
+   
 
     .service-btn{
-        width: 200px;
-        height: 50px;
-        display:block;
-        margin: auto;
-        color: var(--primary-white-color);
-        background-color: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        display: block;
+        font-family: inherit;
+        font-style: normal;
         font-weight: bold;
         font-size: 16px;
-        line-height: 1.87;
-        align-items: center;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        border: none;
         border-radius: 4px;
+        align-items: center;
         text-align: center;
-        padding: 10px 32px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-right: 32px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+        background-color: var(--accent-color);
+        color:var(--primary-white-color);
 
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+   
+    .service-btn:hover {
+        background-color: var(--primary-white-color);
+        color: var(--accent-color);
+        }
+     
 
         
     /* Section */
