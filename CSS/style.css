@@ -45,11 +45,10 @@ html {
         letter-spacing: 0.03em;
     }
 
-    /* img{ 
+     img{ 
         display: block;
-        max-width: 100px;
         height: auto;
-    } */
+    } 
 
     a {
         text-decoration: none;  
@@ -64,10 +63,10 @@ html {
     }
 
     /* HEADER */
-    /* .header{
-        padding-top: 32px;
-        padding-bottom: 32px;
-    } */
+    .header{
+        border-bottom: 1px solid #ECECEC;
+        width: 1600px;
+    } 
 
     .header .container {
         display: flex;
@@ -350,6 +349,7 @@ html {
 
     .what-we-are-doing-picture {
         width: 370px;
+       
     }
     .what-we-are-doing-picture{
         position: relative;
