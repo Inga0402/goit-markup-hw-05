@@ -10,7 +10,7 @@ html {
     }
     *{
         margin: 0;
-        padding: 0;
+        padding:0;
     }
 
    .list{
@@ -65,10 +65,14 @@ html {
     /* HEADER */
     .header{
         border-bottom: 1px solid #ECECEC;
-        width: 1600px;
+        max-width: 100%;
+       
+        
     } 
 
     .header .container {
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -215,17 +219,21 @@ html {
         text-transform: uppercase;
         text-align: center;
         padding-top: 200px; 
+        
     }
 
     .block-hero{
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
         height: 600px;
-        text-align: center;
         background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)
         ),
         url("../images/Headerimg.jpg");
+       
     }
 
     .button{ 
