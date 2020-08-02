@@ -341,16 +341,24 @@ html {
         
     }
     /* What-we-are-doing */
+    
     .section-title-item{
+        width: 100%;
+        display: block;
+        position: absolute;
         color: var(--primary-white-color);
-        background: rgba(47, 48, 58, 0.8);
+        background-color: rgba(47, 48, 58, 0.8);
+        left: 0;
+        bottom: 0;
         font-weight: 700;
+        text-align: center;
+        align-items: center;
+        letter-spacing: 0.03em;
         font-size: 14px;
         line-height: 1.14;
-        text-align: center;
-
-       
-    }
+        padding-top: 27px;
+        padding-bottom: 27px;
+}
 
     .section-title{
         margin-bottom: 50px;
@@ -378,21 +386,7 @@ html {
     .what-we-are-doing-picture{
         position: relative;
     }
-    .section-title-item{
-        display: block;
-        position: absolute;
-        color: var(--primary-white-color);
-        background-color: rgba(47, 48, 58, 0.8);
-        left: 0;
-        bottom: 0;
-        width: 370px;
-        height: 70px;
-        font-weight: 700;
-        text-align: center;
-        align-items: center;
-        letter-spacing: 0.03em;
-        padding-top: 27px;
-}
+   
     
 
     /* Our Teams */
@@ -551,9 +545,9 @@ html {
         justify-content: center;
         text-align: center;
         align-items: center;
-        fill: var(--primary-text-color);
+        fill:  #AFB1B8;
 
-        transition-property: border fill;
+        transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
